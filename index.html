@@ -4,78 +4,116 @@
     <title>Chang Ho Lee - Software Engineer</title>
   </head>
   <body>
-    <div>
-      <p>Hey! You're finally awake!</p>
-      <p>My name is Chang Ho Lee, or 이창호. Welcome to my website!</p>
-    </div>
+    <header>
+      <h1>Hey, you! You're finally awake!</h1>
+      <h6 id="hint" class="hint">You were trying to cross the border, right?</h6>
+      <h2>My name's Chang Ho Lee. This is my website.</h2>
 
-    <div>
-      <p>Who am I?</p>
-      <p>I am a software engineer with a passion for anything gaming. I started out programming in middle school, creating a little game using
-        Scratch with my friends. I was hooked. Ever since then, I carried that passion with me, learning new languages and skills while trying
-        new things with an eager and open mind. Using my experiences in public entertainment, managerial positions, and even educational 
-        institutions, I am confident in my ability to pick things up quickly in a very fast paced environment, and hit the ground running with 
-        any company and any team. When I'm not writing code, you'll often find me test-running games, reading novels, and visiting local 
-        restaurants. 
-      </p>
-    </div>
+      <button id="header-nav-open" onclick="openNav()">Menu</button>
 
-    <div>
-      <p>What are my skills?</p>
+      <nav id="header-nav" class="header-nav">
+        <button id="header-nav-close" onclick="closeNav()">&times;</button>
+        <a href="#intro">Who am I?</a>
+        <a href="#skills">What are my skills?</a>
+        <a href="#achievements">What have I achieved?</a>
+        <a href="#contact">How can I be contacted?</a>
+      </nav>
 
-      <p>Software Engineering</p>
-      <ul>
-        <li>Ruby</li>
-        <li>Rails</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
-        <li>PostgreSQL</li>
-        <li>MongoDB</li>
-        <li>Python</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Defold</li>
-      </ul>
+      <button id="modal-button" onclick="openModal()">???</button>
 
-      <p>Languages</p>
-      <ul>
-        <li>English</li>
-        <li>한국어</li>
-      </ul>
-    </div>
+      <div class="modal">
+        <div class="modal-header">
+          <button id="modal-close" onclick="closeModal()">&times;</button>
+          <h3>So, you've noticed this strange button.</h3>
+        </div>
 
-    <div>
-      <p>What have I achieved?</p>
+        <div class="modal-main">
+          <p>What prompted you to click this button, I wonder? Curiosity? Impulse? Or perhaps, instincts of a true gamer?</p>
+          <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
+          <p>Prove your worth.</p>
 
-      <p>Software Engineering</p>
-      <ul>
-        <li>Pollidify</li>
-        <li>What's In The Fridge?</li>
-        <li>The Tower of Rogues</li>
-      </ul>
+          <form name="modalForm" onsubmit="return validateInput()">
+            <input type="text" id="answer" name="answer">
+            <input type="submit" value="Show me the night and day!">
+          </form>
+        </div>
 
-      <p>Samulnori (사물노리)</p>
-      <ul>
-        <li>Hollywood Bowl</li>
-        <li>Hollywood Parade</li>
-        <li>Walt Disney Concert Hall</li>
-        <li>Zipper Hall</li>
-        <li>LACMA</li>
-      </ul>
-    </div>
+        <div class="modal-footer">
+          <button id="hint-button" onclick="displayHint()">I am not worthy yet. I require assistance.</button>
+        </div>
+      </div>
+      
+    </header>
 
-    <div>
-      <p>How can I be contacted?</p>
+    <main>
+      <section id="intro" class="intro">
+        <p class="section-title">Who am I?</p>
+        <p>I am a software engineer with a passion for anything gaming. I started out programming in middle school, creating a little game using
+          Scratch with my friends. I was hooked. Ever since then, I carried that passion with me, learning new languages and skills while trying
+          new things with an eager and open mind. Using my experiences in public entertainment, managerial positions, and even educational 
+          institutions, I am confident in my ability to pick things up quickly in a very fast paced environment, and hit the ground running with 
+          any company and any team. When I'm not writing code, you'll often find me playing and test-running games, reading novels, and visiting local 
+          restaurants. 
+        </p>
+      </section>
 
-      <ul>
-        <li>Location: Koreatown, Los Angeles, California</li>
-        <li>Phone: (213) 276-0024</li>
-        <li>Email: changholee2wpes@gmail.com</li>
-        <li><a href="https://www.linkedin.com/in/chang-ho-lee-72b96a19a/">LinkedIn</a></li>
-        <li><a href="https://github.com/MikaEleFant/">Github</a></li>
-        <li>Resume: download link</li>
-      </ul>
-    </div>
+      <section id="skills" class="skills">
+        <p class="section-title">What are my skills?</p>
+
+        <p class="subsection-title">Software Engineering</p>
+        <ul>
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>Python</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Defold</li>
+        </ul>
+
+        <p class="subsection-title">Languages</p>
+        <ul>
+          <li>English</li>
+          <li>한국어</li>
+        </ul>
+      </section>
+
+      <section id="achievements" class="achievements">
+        <p class="section-title">What have I achieved?</p>
+
+        <p class="subsection-title">Software Engineering</p>
+        <ul>
+          <li>Pollidify</li>
+          <li>What's In The Fridge?</li>
+          <li>The Tower of Rogues</li>
+        </ul>
+
+        <p class="subsection-title">Samulnori (사물노리)</p>
+        <ul>
+          <li>Hollywood Bowl</li>
+          <li>Hollywood Parade</li>
+          <li>Walt Disney Concert Hall</li>
+          <li>Zipper Hall</li>
+          <li>LACMA</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact" class="contact">
+      <p class="section-title">How can I be contacted?</p>
+
+      <nav id="footer-nav" class="footer-nav">
+        <p>Location: Koreatown, Los Angeles, California</p>
+        <p>Phone: (213) 276-0024</p>
+        <a href="mailto:changholee2wpes@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/chang-ho-lee-72b96a19a/">LinkedIn</a>
+        <a href="https://github.com/MikaEleFant/">Github</a>
+        <a href="/resources/Chang_Ho_Lee_Resume.pdf" download>Resume</a>
+      </nav>
+    </footer>
   </body>
 </html>
