@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script/modal.js"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <title>Chang Ho Lee - Software Engineer</title>
   </head>
   <body>
-    <header>
+    <header>`
       <h1>Hey, you! You're finally awake!</h1>
       <h6 id="hint" class="hint">You were trying to cross the border, right?</h6>
       <h2>My name's Chang Ho Lee. This is my website.</h2>
@@ -22,24 +27,26 @@
       <button id="modal-button" onclick="openModal()">???</button>
 
       <div class="modal">
-        <div class="modal-header">
-          <button id="modal-close" onclick="closeModal()">&times;</button>
-          <h3>So, you've noticed this strange button.</h3>
-        </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="modal-close" onclick="closeModal()">&times;</button>
+            <h3>So, you've noticed this strange button.</h3>
+          </div>
 
-        <div class="modal-main">
-          <p>What prompted you to click this button, I wonder? Curiosity? Impulse? Or perhaps, instincts of a true gamer?</p>
-          <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
-          <p>Prove your worth.</p>
+          <div class="modal-main">
+            <p>What prompted you to click this button, I wonder? Curiosity? Impulse? Or perhaps, instincts of a true gamer?</p>
+            <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
+            <p>Prove your worth.</p>
 
-          <form name="modalForm" onsubmit="return validateInput()">
-            <input type="text" id="answer" name="answer">
-            <input type="submit" value="Show me the night and day!">
-          </form>
-        </div>
+            <form name="modalForm" onsubmit="return validateInput()">
+              <input type="text" id="answer" name="answer">
+              <input type="submit" value="Show me the night and day!">
+            </form>
+          </div>
 
-        <div class="modal-footer">
-          <button id="hint-button" onclick="displayHint()">I am not worthy yet. I require assistance.</button>
+          <div class="modal-footer">
+            <button id="hint-button" onclick="displayHint()">I am not worthy yet. I require assistance.</button>
+          </div>
         </div>
       </div>
       
@@ -87,18 +94,23 @@
 
         <p class="subsection-title">Software Engineering</p>
         <ul>
-          <li>Pollidify</li>
-          <li>What's In The Fridge?</li>
-          <li>The Tower of Rogues</li>
+          <li><a href="https://warm-crag-62563.herokuapp.com/">Pollidify</a></li>
+          <li><a href="http://whatsinthefridgetonight.herokuapp.com/">What's In The Fridge?</a></li>
+          <li><a href="https://mikaelefant.github.io/The-Tower-of-Rogues/">The Tower of Rogues</a></li>
         </ul>
 
         <p class="subsection-title">Samulnori (사물노리)</p>
         <ul>
-          <li>Hollywood Bowl</li>
-          <li>Hollywood Parade</li>
-          <li>Walt Disney Concert Hall</li>
-          <li>Zipper Hall</li>
-          <li>LACMA</li>
+          <li>The Memorial Concert for Fallen Patriots (애국선열 추모음악회) @ Herbert Zipper Concert Hall</li>
+          <li>The 9th Korea Times Music Festival @ Hollywood Bowl</li>
+          <li>The Memorial Concert for Fallen Patriots (애국선열 추모음악회) @ LACES High School</li>
+          <li>The 10th Korea Times Music Festival @ Hollywood Bowl</li>
+          <li>Korea Fantasy @ Walt Disney Concert Hall</li>
+          <li>The 11th Korea Times Music Festival @ Hollywood Bowl</li>
+          <li>The 40st Annual Korean Festival Parade @ Koreatown, Los Angeles, CA</li>
+          <li>The 12th Korea Times Music Festival @ Hollywood Bowl</li>
+          <li>The 41st Annual Korean Festival Parade @ Koreatown, Los Angeles, CA</li>
+          <li>The 13th Korea Times Music Festival @ Hollywood Bowl</li>
         </ul>
       </section>
     </main>
