@@ -20,15 +20,8 @@
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s
-}
-
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
 }
 
 @keyframes animatetop {
@@ -39,8 +32,11 @@
 #modal-close {
   color: white;
   float: right;
-  font-size: 28px;
+  font-size: 24px;
+  height: 30px;
+  vertical-align: middle;
   font-weight: bold;
+  text-align: center;
 }
 
 #modal-close:hover,
@@ -62,4 +58,22 @@
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
+}
+
+#answer {
+  text-transform: uppercase;
+}
+
+.hint {
+  display: none;
+  opacity: 0;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  animation-name: animatehint;
+  animation-duration: 10s;
+}
+
+@keyframes animatehint {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
 }

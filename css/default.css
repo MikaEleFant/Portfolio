@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+  /* background-image: url("/resources/backgrounds/Mountains1.png"); */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+section {
+  border-style: none;
+  box-shadow: none;
+}
+
+h1, h2, h3, h6, p, button, a, li {
+  font-family: "RobotoSlab", serif;
+}

@@ -1,5 +1,3 @@
-// Modal Controls
-
 let modal = document.getElementsByClassName("modal");
 
 function openModal() {
@@ -16,5 +14,29 @@ window.onclick = function(event) {
   }
 }
 
-// Modal Form Controls
+function validateInput() {
+  let input = document.getElementById("answer").value.toUpperCase();
 
+  if (input == "") {
+    alert("Stop! You have violated the law. Pay the court a fine or serve your sentence. Your stolen goods are now forfeit.")
+  }
+  else if (input == "SKYRIM") {
+    alert("Work in progress") 
+    // FIX THIS LATER FOR DARK MODE!
+  }
+  else {
+    alert("Incorrect answer. Perhaps a hint is necessary?")
+  }
+}
+
+function displayHint() {
+  let hint = document.getElementById("hint");
+  
+  closeModal();
+  hint.style.display = "block";
+  setTimeout(closeHint, 10000);
+}
+
+function closeHint() {
+  hint.style.display = "none";
+}

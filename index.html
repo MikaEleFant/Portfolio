@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="script/modal.js"></script>
     <link href="css/reset.css" rel="stylesheet">
-    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp|RobotoSlab" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css' rel='stylesheet'>
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/header-nav.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
+    <script src="script/modal.js"></script>
+    <script src="script/header_nav.js"></script>
     <title>Chang Ho Lee - Software Engineer</title>
   </head>
   <body>
-    <header>`
+    <header>
       <h1>Hey, you! You're finally awake!</h1>
       <h6 id="hint" class="hint">You were trying to cross the border, right?</h6>
       <h2>My name's Chang Ho Lee. This is my website.</h2>
@@ -18,10 +22,10 @@
 
       <nav id="header-nav" class="header-nav">
         <button id="header-nav-close" onclick="closeNav()">&times;</button>
-        <a href="#intro">Who am I?</a>
-        <a href="#skills">What are my skills?</a>
-        <a href="#achievements">What have I achieved?</a>
-        <a href="#contact">How can I be contacted?</a>
+        <a onclick="selectNavElement(0)" href="#intro">Who am I?</a>
+        <a onclick="selectNavElement(1)" href="#skills">What are my skills?</a>
+        <a onclick="selectNavElement(2)" href="#achievements">What have I achieved?</a>
+        <a onclick="selectNavElement(3)" href="#contact">How can I be contacted?</a>
       </nav>
 
       <button id="modal-button" onclick="openModal()">???</button>
@@ -38,14 +42,12 @@
             <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
             <p>Prove your worth.</p>
 
-            <form name="modalForm" onsubmit="return validateInput()">
-              <input type="text" id="answer" name="answer">
-              <input type="submit" value="Show me the night and day!">
-            </form>
+            <input type="text" id="answer" name="answer">
+            <button id="submit" onclick="validateInput()">Reveal the unseen!</button>
           </div>
 
           <div class="modal-footer">
-            <button id="hint-button" onclick="displayHint()">I am not worthy yet. I require assistance.</button>
+            <button id="hint-button" onclick="displayHint()">In my time of need, I ask of your help.</button>
           </div>
         </div>
       </div>
@@ -69,16 +71,25 @@
 
         <p class="subsection-title">Software Engineering</p>
         <ul>
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
-          <li>PostgreSQL</li>
-          <li>MongoDB</li>
-          <li>Python</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
+          <li><i class="devicon-python-plain-wordmark"></i></li>
+          <li><i class="devicon-jupyter-plain-wordmark"></i></li>
+          <li><i class="devicon-ruby-plain-wordmark"></i></li>
+          <li><i class="devicon-rails-plain-wordmark"></i></li>
+          <li><i class="devicon-javascript-plain"></i></li>
+          <li><i class="devicon-html5-plain-wordmark"></i></li>
+          <li><i class="devicon-css3-plain-wordmark"></i></li>
+          <li><i class="devicon-git-plain-wordmark"></i></li>
+          <li><i class="devicon-nodejs-plain-wordmark"></i></li>
+          <li><i class="devicon-react-original-wordmark"></i></li>
+          <li><i class="devicon-redux-original"></i></li>
+          <li><i class="devicon-express-original-wordmark"></i></li>
+          <li><i class="devicon-heroku-plain-wordmark"></i></li>
+          <li><i class="devicon-postgresql-plain-wordmark"></i></li>
+          <li><i class="devicon-mongodb-plain-wordmark"></i></li>
+          <li><i class="devicon-docker-plain-wordmark"></i></li>
+          <li><i class="devicon-webpack-plain-wordmark"></i></li>
+          <li><i class="devicon-yarn-plain-wordmark"></i></li>
+          <li><i class="devicon-grunt-plain-wordmark"></i></li>
           <li>Defold</li>
         </ul>
 
@@ -124,7 +135,7 @@
         <a href="mailto:changholee2wpes@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/chang-ho-lee-72b96a19a/">LinkedIn</a>
         <a href="https://github.com/MikaEleFant/">Github</a>
-        <a href="/resources/Chang_Ho_Lee_Resume.pdf" download>Resume</a>
+        <a href="/resources/downloads/Chang_Ho_Lee_Resume.pdf" download>Resume</a>
       </nav>
     </footer>
   </body>

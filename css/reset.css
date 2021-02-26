@@ -1,3 +1,5 @@
+/* Credit to: https://piccalil.li/blog/a-modern-css-reset */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -49,8 +51,6 @@ picture {
   display: block;
 }
 
-/* Credit to: https://piccalil.li/blog/a-modern-css-reset */
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -74,3 +74,4 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
