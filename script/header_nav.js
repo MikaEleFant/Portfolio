@@ -5,7 +5,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("header-nav").style.width = "0";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "rgba(0,0,0,0)";
 }
 
 function selectNavElement(i) {

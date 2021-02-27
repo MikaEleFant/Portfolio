@@ -13,8 +13,13 @@ html {
 }
 
 section {
+  border-radius: 5px;
+}
+
+section, footer {
   border-style: none;
   box-shadow: none;
+  background-color: aliceblue;
 }
 
 h1, h2, h3, h6, p, button, a, li {
