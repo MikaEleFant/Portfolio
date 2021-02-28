@@ -28,10 +28,10 @@ function validateInput() {
     alert("Incorrect answer. Perhaps a hint is necessary?")
   }
 }
-
+let hint = document.getElementById("hint");
 function displayHint() {
-  let hint = document.getElementById("hint");
   
+
   closeModal();
   hint.style.display = "block";
   setTimeout(closeHint, 10000);

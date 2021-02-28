@@ -8,8 +8,8 @@
     <link href="css/header.css" rel="stylesheet">
     <link href="css/header-nav.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
-    <script src="script/modal.js"></script>
-    <script src="script/header_nav.js"></script>
+    <script src="script/modal.js" defer></script>
+    <script src="script/header_nav.js" defer></script>
     <title>Chang Ho Lee - Software Engineer</title>
   </head>
   <body>
@@ -18,36 +18,38 @@
       <h6 id="hint" class="hint">You were trying to cross the border, right?</h6>
       <h2>My name's Chang Ho Lee. This is my website.</h2>
 
-      <button id="header-nav-open" onclick="openNav()">Menu</button>
+      <div class="header-nav-bar">
+        <button id="header-nav-open" onclick="openNav()">Menu</button>
 
-      <nav id="header-nav" class="header-nav">
-        <button id="header-nav-close" onclick="closeNav()">&times;</button>
-        <a onclick="selectNavElement(0)" href="#intro">Who am I?</a>
-        <a onclick="selectNavElement(1)" href="#skills">What are my skills?</a>
-        <a onclick="selectNavElement(2)" href="#achievements">What have I achieved?</a>
-        <a onclick="selectNavElement(3)" href="#contact">How can I be contacted?</a>
-      </nav>
+        <nav id="header-nav" class="header-nav">
+          <button id="header-nav-close" onclick="closeNav()">&times;</button>
+          <a onclick="selectNavElement(0)" href="#intro">Who am I?</a>
+          <a onclick="selectNavElement(1)" href="#skills">What are my skills?</a>
+          <a onclick="selectNavElement(2)" href="#achievements">What have I achieved?</a>
+          <a onclick="selectNavElement(3)" href="#contact">How can I be contacted?</a>
+        </nav>
 
-      <button id="modal-button" onclick="openModal()">???</button>
+        <button id="modal-button" onclick="openModal()">???</button>
 
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button id="modal-close" onclick="closeModal()">&times;</button>
-            <h3>So, you've noticed this strange button.</h3>
-          </div>
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button id="modal-close" onclick="closeModal()">&times;</button>
+              <h3>So, you've noticed this strange button.</h3>
+            </div>
 
-          <div class="modal-main">
-            <p>What prompted you to click this button, I wonder? Curiosity? Impulse? Or perhaps, instincts of a true gamer?</p>
-            <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
-            <p>Prove your worth.</p>
+            <div class="modal-main">
+              <p>What prompted you to click this button, I wonder? Curiosity? Impulse? Or perhaps, instincts of a true gamer?</p>
+              <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
+              <p>Prove your worth.</p>
 
-            <input type="text" id="answer" name="answer">
-            <button id="submit" onclick="validateInput()">Reveal the unseen!</button>
-          </div>
+              <input type="text" id="answer" name="answer">
+              <button id="submit" onclick="validateInput()">Reveal the unseen!</button>
+            </div>
 
-          <div class="modal-footer">
-            <button id="hint-button" onclick="displayHint()">In my time of need, I ask of your help.</button>
+            <div class="modal-footer">
+              <button id="hint-button" onclick="displayHint()">In my time of need, I ask of your help.</button>
+            </div>
           </div>
         </div>
       </div>
@@ -186,6 +188,8 @@
         <a href="https://github.com/MikaEleFant/"><i class="footer-devicon devicon-github-plain"></i></a>
         <a href="/resources/downloads/Chang_Ho_Lee_Resume.pdf" download>Resume</a>
       </nav>
+
+      <p class="copyright-text">Background images are from RPGMaker&trade; VX Ace, and belong to Degica&trade;, its partners, and its affiliates.</p>
     </footer>
   </body>
 </html>

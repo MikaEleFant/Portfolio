@@ -36,11 +36,6 @@
   margin-left: 50px;
 }
 
-main, footer {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
 @media screen and (max-height: 450px) {
   .header-nav {padding-top: 15px;}
   .header-nav a {font-size: 18px;}

@@ -8,6 +8,11 @@ h1, h6 {
   font-weight: bold;
 }
 
-header {
-  
+.header-nav-bar {
+  background-color: rgb(219, 219, 241);
+  padding: 10px;
+  margin: 0 50px;
+  border-radius: 5px;
+  border-top: 3px ridge aqua;
+  border-bottom: 3px ridge aqua;
 }

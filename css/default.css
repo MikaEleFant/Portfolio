@@ -14,6 +14,7 @@ html {
 
 section {
   border-radius: 5px;
+  margin: 50px 50px;
 }
 
 section, footer {
