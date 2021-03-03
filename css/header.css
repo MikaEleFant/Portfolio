@@ -16,3 +16,7 @@ h1, h6 {
   border: 3px ridge aqua;
   border-bottom: 3px ridge aqua;
 }
+
+#modal-button {
+  float: right;
+}
