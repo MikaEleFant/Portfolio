@@ -22,21 +22,21 @@ function validateInput() {
   }
   else if (input == "SKYRIM") {
     alert("Work in progress") 
-    // FIX THIS LATER FOR DARK MODE!
+    // FIX THIS LATER FOR STARS!
   }
   else {
     alert("Incorrect answer. Perhaps a hint is necessary?")
   }
 }
-let hint = document.getElementById("hint");
-function displayHint() {
-  
 
+let hint = document.getElementsByClassName("hint");
+
+function displayHint() {
   closeModal();
-  hint.style.display = "block";
+  hint[0].style.display = "block";
   setTimeout(closeHint, 10000);
 }
 
 function closeHint() {
-  hint.style.display = "none";
+  hint[0].style.display = "none";
 }

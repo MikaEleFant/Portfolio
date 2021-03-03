@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  /* background-image: url("/resources/backgrounds/Mountains1.png"); */
+  background-image: url("/resources/backgrounds/Mountains1.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -18,11 +18,20 @@ section {
 }
 
 section, footer {
-  border-style: none;
-  box-shadow: none;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.4);
 }
 
 h1, h2, h3, h6, p, button, a, li {
   font-family: "RobotoSlab", serif;
+}
+
+:target {
+  animation: highlight 5s ease-out;
+}
+
+@keyframes highlight {
+  0% {box-shadow: none;}
+  25% {box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.4), 0 0 10px 10px rgba(255, 255, 255, 0.3);}
+  75% {box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.4), 0 0 10px 10px rgba(255, 255, 255, 0.3);}
+  100% {box-shadow: none;}
 }

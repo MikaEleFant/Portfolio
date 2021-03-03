@@ -9,10 +9,10 @@ h1, h6 {
 }
 
 .header-nav-bar {
-  background-color: rgb(219, 219, 241);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin: 0 50px;
   border-radius: 5px;
-  border-top: 3px ridge aqua;
+  border: 3px ridge aqua;
   border-bottom: 3px ridge aqua;
 }
