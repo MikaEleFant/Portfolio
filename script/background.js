@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains2.png")';
     }
     else {
-      docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains2.png")';
+      docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains1.png")';
     }
   }
   else {
