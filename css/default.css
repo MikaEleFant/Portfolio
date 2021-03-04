@@ -22,7 +22,14 @@ section, footer {
 }
 
 h1, h2, h3, h6, p, button, a, li {
-  font-family: "RobotoSlab", serif;
+  font-family: "VT323";
+}
+
+.section-title {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
 }
 
 :target {

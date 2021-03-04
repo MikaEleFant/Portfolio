@@ -28,4 +28,4 @@ document.addEventListener("DOMContentLoaded", function(){
 //       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains1.png")';
 //     }
 //   }
-// });
+});
