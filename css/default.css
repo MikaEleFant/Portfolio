@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  background-image: url("/resources/backgrounds/StarlitSky.png");
+  background-image: url("../resources/backgrounds/StarlitSky.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -28,6 +28,11 @@ footer {
 h1, h2, h3, h6, p, a, li {
   font-family: "VT323";
   color: white;
+}
+
+button {
+  font-family: "VT323";
+  color: black;
 }
 
 .section-title {
