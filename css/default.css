@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  background-image: url("/resources/backgrounds/Mountains1.png");
+  background-image: url("/resources/backgrounds/StarlitSky.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -13,16 +13,21 @@ html {
 }
 
 section {
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
   margin: 50px 50px;
+  border: 3px ridge aqua;
+  border-bottom: 3px ridge aqua;
 }
 
-section, footer {
-  background-color: rgba(240, 248, 255, 0.4);
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 3px ridge aqua;
 }
 
-h1, h2, h3, h6, p, button, a, li {
+h1, h2, h3, h6, p, a, li {
   font-family: "VT323";
+  color: white;
 }
 
 .section-title {
@@ -41,4 +46,16 @@ h1, h2, h3, h6, p, button, a, li {
   25% {box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.4), 0 0 10px 10px rgba(255, 255, 255, 0.3);}
   75% {box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.4), 0 0 10px 10px rgba(255, 255, 255, 0.3);}
   100% {box-shadow: none;}
+}
+
+.subsection-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

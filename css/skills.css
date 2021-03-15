@@ -1,0 +1,20 @@
+.technologies-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 100px 100px 100px;
+  margin: 0 auto;
+}
+
+.languages-list {
+  display: flex;
+}
+
+.skills > ul > li {
+  display: block;
+  margin: 0 auto;
+}
+
+i {
+  font-size: 56px;
+  margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+article {
+  display: flex;
+  padding: 10px;
+  border-top: 3px ridge aqua;
+}
+
+img {
+  width: 50%;
+  height: 100%;
+}
+
+details {
+  display: inline;
+  text-align: center;
+}

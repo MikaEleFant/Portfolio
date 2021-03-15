@@ -9,6 +9,9 @@
     <link href="css/header-nav.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
     <link href="css/dividers.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
+
     <script src="script/background.js"></script>
     <script src="script/modal.js"></script>
     <script src="script/header_nav.js"></script>
@@ -21,7 +24,7 @@
       <h6 class="hint">You were trying to cross the border, right?</h6>
       <h2>My name's Chang Ho Lee. This is my website.</h2>
 
-      <div class="separator02"></div>
+      <div class="separator01"></div>
 
       <div class="header-nav-bar">
         <button id="header-nav-open" onclick="openNav()">Menu</button>
@@ -62,10 +65,10 @@
     </header>
 
     <main>
+      <div class="separator01"></div>
+
       <section id="intro" class="intro">
         <p class="section-title">Who am I?</p>
-
-        <div class="separator02"></div>
 
         <p>I am a software engineer with a passion for anything gaming. I started out programming in middle school, creating a little game using
           Scratch with my friends. I was hooked. Ever since then, I carried that passion with me, learning new languages and skills while trying
@@ -76,11 +79,83 @@
         </p>
       </section>
 
+      <div class="separator01"></div>
+
+      <section id="achievements" class="achievements">
+        <p class="section-title">What have I achieved?</p>
+
+        <p class="subsection-title">Software Engineering</p>
+        <ul>
+          <li>
+            <article class="pollidify">
+              <a href="https://warm-crag-62563.herokuapp.com/" target="_blank">
+                <img src="resources/screenshots/Pollidify.png" alt="Pollidify - A Free & Simple Polling Site!">
+              </a>
+              <details class="pollidify-details">
+                <summary>Pollidify - A Free & Simple Polling Site!</summary>
+                <p>
+                  Pollidify is an application that aims to poll participants at a world wide scale, and allow users to express their polls. 
+                  Created in a week, we decided to implement a project that aims to increase the amount of free data to be used by surveyors 
+                  and researchers worldwide.
+                </p>
+                <a href="https://github.com/MikaEleFant/Pollidify" target="_blank"><i class="article-devicon devicon-github-plain"></i></a>
+              </details>
+            </article>
+          </li>
+
+          <li>
+            <article class="whats-in-the-fridge">
+              <a href="http://whatsinthefridgetonight.herokuapp.com/" target="_blank">
+                <img src="resources/screenshots/WITF.png" alt="What's in the Fridge? - A Convenient Recipe Finder Based On Ingredients In Your Fridge!">
+              </a>
+              <details class="wtif-details">
+                <summary>What's In The Fridge? - A Convenient Recipe Finder Based On Ingredients In Your Fridge!</summary>
+                <p>
+                  What’s in the Fridge? helps users find recipes based upon ingredients they already have in their fridge! 
+                  At first, we looked at other recipe sites to gather some ideas, but eventually we decided to create our own unique 
+                  twist on getting your next meal plan ready!
+                </p>
+                <a href="https://github.com/mitchellreiss/WhatsInTheFridge" target="_blank"><i class="article-devicon devicon-github-plain"></i></a>
+              </details>
+            </article>
+          </li>
+
+          <li>
+            <article class="the-tower-of-rogues">
+              <a href="https://mikaelefant.github.io/The-Tower-of-Rogues/" target="_blank">
+                <img src="resources/screenshots/TTOR.png" alt="The Tower of Rogues - A Roguelike Browser Game Based On D&D Elements!">
+              </a>
+              <details class="ttor-details">
+                <summary>The Tower of Rogues - A Roguelike Browser Game Based On D&D Elements!</summary>
+                <p>
+                  The Tower of Rogues is a browser-based roguelike game based on the dice rolling attack elements of Dungeons & Dragons.
+                  Made in three days using ROT.js, Grunt, and Phaser.js, it is a fun small game to play to kill some time!
+                  Try to kill all the enemies before you get killed yourself!
+                </p>
+                <a href="https://github.com/MikaEleFant/The-Tower-of-Rogues" target="_blank"><i class="article-devicon devicon-github-plain"></i></a>
+              </details>
+            </article>
+          </li>
+        </ul>
+
+        <p class="subsection-title">Samulnori (사물노리)</p>
+        <ul>
+          <li><a href="/resources/downloads/Zipper_Hall_Samulnori_Pamphlet.pdf" target="_blank">3.1 Society Memorial Concert for Fallen Patriots @ Zipper Hall</a></li>
+          <li><a href="/resources/downloads/LACES_Samulnori_Pamphlet.pdf" target="_blank">3.1 Society Memorial Concert for Fallen Patriots @ LACES</a></li>
+          <li><a href="/resources/downloads/Walt_Disney_Samulnori_Pamphlet.pdf" target="_blank">Korea Fantasy @ Walt Disney Concert Hall</a></li>
+          <li><a href="http://ktmf.koreatimes.com/" target="_blank">The 9th, 10th, 11th, 12th, and 13th Korea Times Music Festival @ Hollywood Bowl</a></li>
+          <li><a href="https://www.lakoreanfestival.org/" target="_blank">The 39th, 40th, 41st, and 42nd Korean Festival Parade @ Koreatown, Los Angeles</a></li>
+        </ul>
+        <p>For more information, please visit us <a href="https://www.irvinedodream.org/" target="_blank">here</a>.</p>
+      </section>
+
+      <div class="separator01"></div>
+
       <section id="skills" class="skills">
         <p class="section-title">What are my skills?</p>
 
         <p class="subsection-title">Software Engineering</p>
-        <ul>
+        <ul class="technologies-list">
           <li><i class="devicon devicon-python-plain-wordmark"></i></li>
           <li><i class="devicon devicon-jupyter-plain-wordmark"></i></li>
           <li><i class="devicon devicon-ruby-plain-wordmark"></i></li>
@@ -103,84 +178,13 @@
         </ul>
 
         <p class="subsection-title">Languages</p>
-        <ul>
+        <ul class="languages-list">
           <li>English</li>
           <li>한국어</li>
         </ul>
       </section>
 
-      <section id="achievements" class="achievements">
-        <p class="section-title">What have I achieved?</p>
-
-        <div class="separator02"></div>
-
-        <p class="subsection-title">Software Engineering</p>
-        <ul>
-          <li>
-            <article class="pollidify">
-              <a href="https://warm-crag-62563.herokuapp.com/" target="_blank">
-                Pollidify
-                <img src="resources/screenshots/Pollidify.png" alt="Pollidify - A Free & Simple Polling Site!">
-              </a>
-              <details class="pollidify-details">
-                <summary>A Free & Simple Polling Site!</summary>
-                <p>
-                  Pollidify is an application that aims to poll participants at a world wide scale, and allow users to express their polls. 
-                  Created in a week, we decided to implement a project that aims to increase the amount of free data to be used by surveyors 
-                  and researchers worldwide.
-                </p>
-                <a href="https://github.com/MikaEleFant/Pollidify" target="_blank"><i class="article-devicon devicon-github-plain"></i></a>
-              </details>
-            </article>
-          </li>
-
-          <li>
-            <article class="whats-in-the-fridge">
-              <a href="http://whatsinthefridgetonight.herokuapp.com/" target="_blank">
-                What's in the Fridge?
-                <img src="resources/screenshots/WITF.png" alt="What's in the Fridge? - A Convenient Recipe Finder Based On Ingredients In Your Fridge!">
-              </a>
-              <details class="wtif-details">
-                <summary>A Convenient Recipe Finder Based On Ingredients In Your Fridge!</summary>
-                <p>
-                  What’s in the Fridge? helps users find recipes based upon ingredients they already have in their fridge! 
-                  At first, we looked at other recipe sites to gather some ideas, but eventually we decided to create our own unique 
-                  twist on getting your next meal plan ready!
-                </p>
-                <a href="https://github.com/mitchellreiss/WhatsInTheFridge" target="_blank"><i class="article-devicon devicon-github-plain"></i></a>
-              </details>
-            </article>
-          </li>
-
-          <li>
-            <article class="the-tower-of-rogues">
-              <a href="https://mikaelefant.github.io/The-Tower-of-Rogues/" target="_blank">
-                The Tower of Rogues
-                <img src="resources/screenshots/TTOR.png" alt="The Tower of Rogues - A Roguelike Browser Game Based On D&D Elements!">
-              </a>
-              <details class="ttor-details">
-                <summary>A Roguelike Browser Game Based On D&D Elements!</summary>
-                <p>
-                  The Tower of Rogues is a browser-based roguelike game based on the dice rolling attack elements of Dungeons & Dragons.
-                  Made in three days using ROT.js, Grunt, and Phaser.js, it is a fun small game to play to kill some time!
-                  Try to kill all the enemies before you get killed yourself!
-                </p>
-                <a href="https://github.com/MikaEleFant/The-Tower-of-Rogues" target="_blank"><i class="article-devicon devicon-github-plain"></i></a>
-              </details>
-            </article>
-          </li>
-        </ul>
-
-        <p class="subsection-title">Samulnori (사물노리)</p>
-        <ul>
-          <li><a href="/resources/downloads/Zipper_Hall_Samulnori_Pamphlet.pdf" target="_blank">3.1 Society Memorial Concert for Fallen Patriots @ Zipper Hall</a></li>
-          <li><a href="/resources/downloads/LACES_Samulnori_Pamphlet.pdf" target="_blank">3.1 Society Memorial Concert for Fallen Patriots @ LACES</a></li>
-          <li><a href="/resources/downloads/Walt_Disney_Samulnori_Pamphlet.pdf" target="_blank">Korea Fantasy @ Walt Disney Concert Hall</a></li>
-          <li><a href="http://ktmf.koreatimes.com/" target="_blank">The 9th, 10th, 11th, 12th, and 13th Korea Times Music Festival @ Hollywood Bowl</a></li>
-          <li><a href="https://www.lakoreanfestival.org/" target="_blank">The 39th, 40th, 41st, and 42nd Korean Festival Parade @ Koreatown, Los Angeles</a></li>
-        </ul>
-        <p>For more information, please visit us <a href="https://www.irvinedodream.org/" target="_blank">here</a>.</p>
-      </section>
+      <div class="separator01"></div>
     </main>
 
     <footer id="contact" class="contact">
