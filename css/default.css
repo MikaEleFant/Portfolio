@@ -12,25 +12,33 @@ html {
 	}
 }
 
-section {
+section, footer {
   background-color: rgba(0, 0, 0, 0.1);
+  width: 80%;
   padding: 10px;
-  margin: 50px 50px;
+  margin: 50px auto;
   border: 3px ridge aqua;
   border-bottom: 3px ridge aqua;
 }
 
-footer {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-top: 3px ridge aqua;
+header, main, footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 h1, h2, h3, h6, p, a, li {
   font-family: "VT323";
   color: white;
 }
 
-button {
+p, a, li {
+  font-size: larger;
+}
+
+button {s
   font-family: "VT323";
   color: black;
 }
@@ -38,7 +46,7 @@ button {
 .section-title {
   font-style: oblique;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 42px;
   text-align: center;
 }
 
@@ -56,7 +64,7 @@ button {
 .subsection-title {
   text-align: center;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 ul {

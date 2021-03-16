@@ -9,6 +9,7 @@ h1, h6 {
 
 .header-nav-bar {
   background-color: rgba(0, 0, 0, 0.1);
+  width: 80%;
   padding: 10px;
   margin: 0 50px;
   border: 3px ridge aqua;
