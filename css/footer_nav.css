@@ -3,18 +3,14 @@
   margin: 0 auto;
 }
 
-.location {
-  word-wrap: normal;
-}
-
 .footer-links {
   word-wrap: normal;
 }
 
 .footer-nav {
   display: grid;
-  grid-template-columns: 40% 40% 40%;
-  grid-template-rows: 100px 80px;
-  margin: 0 auto;
-  margin-top: 24px;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
 }

@@ -1,7 +1,14 @@
-.technologies-list {
+.technologies-list-1 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 100px 100px 100px 100px;
+  margin: 0 auto;
+}
+
+.technologies-list-2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100px;
   margin: 0 auto;
 }
 
@@ -11,7 +18,7 @@
 
 .skills > ul > li {
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .skills-icon {
