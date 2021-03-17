@@ -1,4 +1,4 @@
-let currentTheme = localStorage.getItem("theme") ?? "dark";
+let currentTheme = localStorage.getItem("theme") ?? "light";
 
 document.onreadystatechange = function checkTheme() {
   if (currentTheme == "light") {
