@@ -1,4 +1,4 @@
-## [Live Link to my Portfolio Site!](https://mikaelefant.github.io/Portfolio/)
+## [Live Link to my Portfolio Site!](https://mikaelefant.netlify.app/)
 
 # Hi, I'm Chang Ho Lee.
 
