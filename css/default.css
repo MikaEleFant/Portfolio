@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url('/resources/screenshots/starlitsky.png');
+  background-image: url('/starlitsky.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
