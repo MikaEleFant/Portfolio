@@ -11,11 +11,12 @@ h1, h6 {
   background-color: rgba(0, 0, 0, 0.1);
   width: 80%;
   padding: 10px;
-  margin: 0 50px;
+  margin: 30px 50px;
   border: 3px ridge aqua;
   border-bottom: 3px ridge aqua;
 }
 
 #modal-button {
   float: right;
+  background-color: black;
 }
