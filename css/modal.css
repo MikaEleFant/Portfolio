@@ -50,11 +50,16 @@
   padding: 2px 16px;
   background-color: aqua;
   color: white;
+  text-align: center;
 }
 
-.modal-main {padding: 2px 16px;}
+.modal-main {
+  padding: 2px 16px;
+  text-align: center;
+}
 
 .modal-footer {
+  text-align: center;
   padding: 2px 16px;
   background-color: aqua;
   color: white;
@@ -62,6 +67,7 @@
 
 #answer {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hint {

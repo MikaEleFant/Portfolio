@@ -1,11 +1,11 @@
 let modal = document.getElementsByClassName("modal");
 
 function openModal() {
-  modal[0].style.display = "block"
+  modal[0].style.display = "block";
 }
 
 function closeModal() {
-  modal[0].style.display = "none"
+  modal[0].style.display = "none";
 }
 
 window.onclick = function(event) {
@@ -16,16 +16,18 @@ window.onclick = function(event) {
 
 function validateInput() {
   let input = document.getElementById("answer").value.toUpperCase();
+  let modalButton = document.getElementById("modal-button");
 
   if (input == "") {
-    alert("Stop! You have violated the law. Pay the court a fine or serve your sentence. Your stolen goods are now forfeit.")
+    alert("Stop! You have violated the law. Pay the court a fine or serve your sentence. Your stolen goods are now forfeit.");
   }
   else if (input == "SKYRIM") {
-    alert("Work in progress") 
-    // FIX THIS LATER FOR STARS!
+    closeModal();
+    modalButton.style.display = "none";
+    window.open("https://youtu.be/dQw4w9WgXcQ");
   }
   else {
-    alert("Incorrect answer. Perhaps a hint is necessary?")
+    alert("Incorrect answer. Perhaps a hint is necessary?");
   }
 }
 

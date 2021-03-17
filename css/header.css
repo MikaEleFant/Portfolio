@@ -18,5 +18,9 @@ h1, h6 {
 
 #modal-button {
   float: right;
-  background-color: black;
+  opacity: 0.2;
+}
+
+#modal-button:hover {
+  cursor: pointer;
 }

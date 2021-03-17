@@ -1,31 +1,35 @@
-document.addEventListener("DOMContentLoaded", function(){
-  let d = new Date();
-  let currentTimeString = d.toLocaleTimeString();
-  let currentTimeArray = currentTimeString.split(" ");
-  let currentTimeSuffix = currentTimeArray[1];
-  let currentTimeHour = currentTimeArray[0].split(":")[0];
-  let docHTML = document.documentElement;
+let currentTheme = localStorage.getItem("theme") ?? "dark";
 
-//   if (currentTimeSuffix == "AM") {
-//     if (parseInt(currentTimeHour) < 5) {
-//       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains3.png")';
-//     }
-//     else if (parseInt(currentTimeHour) < 7) {
-//       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains2.png")';
-//     }
-//     else {
-//       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains1.png")';
-//     }
-//   }
-//   else {
-//     if (parseInt(currentTimeHour) > 5) {
-//       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains2.png")';
-//     }
-//     else if (parseInt(currentTimeHour) > 7) {
-//       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains3.png")';
-//     }
-//     else {
-//       docHTML.style.backgroundImage = 'url("/resources/backgrounds/Mountains1.png")';
-//     }
-//   }
-});
+document.onreadystatechange = function checkTheme() {
+  if (currentTheme == "light") {
+    document.getElementById("checkbox").checked = false;
+  }
+  else {
+    document.getElementById("checkbox").checked = true;
+  }
+  switchTheme();
+}
+
+function switchTheme() {
+  let themeCheck = document.getElementById("checkbox");
+  let containerElements = document.querySelectorAll("h1, h2, h3, h6, p, a, li, span.theme-icon, #header-nav-close");
+  let dividers = document.querySelectorAll("div.separator01, div.separator02");
+  let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close");
+
+  if (themeCheck.checked) {
+    document.documentElement.style.backgroundImage = "url('../resources/backgrounds/StarlitSky.png')";
+    containerElements.forEach(containerElement => containerElement.style.color = "white");
+    dividers.forEach(divider => divider.className = "separator01");
+    containers.forEach(container => container.style.backgroundColor = "black");
+
+    localStorage.setItem("theme", "dark");
+  }
+  else {
+    document.documentElement.style.backgroundImage = "url('../resources/backgrounds/BlueSky.png')";
+    containerElements.forEach(containerElement => containerElement.style.color = "black");
+    dividers.forEach(divider => divider.className = "separator02");
+    containers.forEach(container => container.style.backgroundColor = "white");
+
+    localStorage.setItem("theme", "light");
+  }    
+}

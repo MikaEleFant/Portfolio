@@ -7,12 +7,13 @@
     <link href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/theme_switch.css" rel="stylesheet">
     <link href="css/header-nav.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
     <link href="css/dividers.css" rel="stylesheet">
     <link href="css/article.css" rel="stylesheet">
     <link href="css/skills.css" rel="stylesheet">
-    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
 
     <script src="script/background.js"></script>
     <script src="script/modal.js"></script>
@@ -25,6 +26,15 @@
       <h1>Hey, you! You're finally awake!</h1>
       <h6 class="hint">You were trying to cross the border, right?</h6>
       <h2>My name's Chang Ho Lee. This is my website.</h2>
+
+      <div class="theme-switch-wrapper">
+        <span class="material-icons-outlined theme-icon">light_mode</span>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" onchange="switchTheme()">
+          <div class="slider round"></div>
+        </label>
+        <span class="material-icons-outlined theme-icon">dark_mode</span>
+      </div>
 
       <div class="separator01"></div>
 
@@ -161,25 +171,25 @@
 
         <p class="subsection-title">Software Engineering</p>
         <ul class="technologies-list">
-          <li><i class="devicon devicon-python-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-jupyter-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-ruby-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-rails-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-javascript-plain"></i></li>
-          <li><i class="devicon devicon-html5-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-css3-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-git-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-nodejs-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-react-original-wordmark"></i></li>
-          <li><i class="devicon devicon-redux-original"></i></li>
-          <li><i class="devicon devicon-express-original-wordmark"></i></li>
-          <li><i class="devicon devicon-heroku-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-postgresql-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-mongodb-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-docker-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-webpack-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-yarn-plain-wordmark"></i></li>
-          <li><i class="devicon devicon-grunt-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-python-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-jupyter-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-ruby-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-rails-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-javascript-plain"></i></li>
+          <li><i class="skills-icon devicon devicon-html5-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-css3-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-git-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-nodejs-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-react-original-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-redux-original"></i></li>
+          <li><i class="skills-icon devicon devicon-express-original-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-heroku-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-postgresql-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-mongodb-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-docker-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-webpack-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-yarn-plain-wordmark"></i></li>
+          <li><i class="skills-icon devicon devicon-grunt-plain-wordmark"></i></li>
         </ul>
 
         <p class="subsection-title">Languages</p>
@@ -195,13 +205,13 @@
     <footer id="contact" class="contact">
       <p class="section-title">How can I be contacted?</p>
 
-      <nav id="footer-nav" class="footer-nav">s
-        <p><span class="material-icons-outlined">room</span> Koreatown, Los Angeles, California</p>
-        <p><span class="material-icons-outlined">phone_android</span> (213) 276-0024</p>
-        <p><a href="mailto:changholee2wpes@gmail.com"><span class="material-icons-outlined">email</span></a> Email</p>
-        <p><a href="https://www.linkedin.com/in/chang-ho-lee-72b96a19a/" target="_blank"><i class="footer-devicon devicon-linkedin-plain"></i></a> LinkedIn</p>
-        <p><a href="https://github.com/MikaEleFant/" target="_blank"><i class="footer-devicon devicon-github-plain"></i></a> GitHub</p>
-        <p><a href="/resources/downloads/Chang_Ho_Lee_Resume.pdf" download><span class="material-icons-outlined">description</span></a> Resume</p>
+      <nav id="footer-nav" class="footer-nav">
+        <p><span class="material-icons-outlined contact-icon">room</span> Koreatown, Los Angeles, California</p>
+        <p><span class="material-icons-outlined contact-icon">phone_android</span> (213) 276-0024</p>
+        <p><a href="mailto:changholee2wpes@gmail.com"><span class="material-icons-outlined contact-icon">email</span> Email</a></p>
+        <p><a href="https://www.linkedin.com/in/chang-ho-lee-72b96a19a/" target="_blank"><i class="devicon-linkedin-plain contact-icon"></i> LinkedIn</a></p>
+        <p><a href="https://github.com/MikaEleFant/" target="_blank"><i class="devicon-github-plain contact-icon"></i> GitHub</a></p>
+        <p><a href="/resources/downloads/Chang_Ho_Lee_Resume.pdf" download><span class="material-icons-outlined contact-icon">description</span> Resume</a></p>
       </nav>
 
       <p class="copyright-text">Background images are from RPGMaker&trade; VX Ace, and belong to Degica&trade;, its partners, and its affiliates.</p>
