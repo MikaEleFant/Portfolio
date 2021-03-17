@@ -36,7 +36,9 @@ function switchTheme() {
 
 function revealThemeToggle() {
   let themeToggle = document.querySelector("div.theme-hider");
+  let themeWrapper = document.querySelector("div.theme-switch-wrapper");
 
   themeToggle.style.display = "flex";
+  themeWrapper.classList.remove("hidden");
   foundStar(1);
 }
