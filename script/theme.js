@@ -33,3 +33,10 @@ function switchTheme() {
     localStorage.setItem("theme", "light");
   }    
 }
+
+function revealThemeToggle() {
+  let themeToggle = document.querySelector("div.theme-hider");
+
+  themeToggle.style.display = "flex";
+  foundStar(1);
+}

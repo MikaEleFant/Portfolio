@@ -11,7 +11,7 @@ article {
   transition: 1s ease;
 }
 
-img {
+.project-img {
   width: 640px;
   height: 360px;
   border: 3px ridge aqua;

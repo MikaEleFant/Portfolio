@@ -12,8 +12,14 @@ h1, h6 {
   width: 80%;
   padding: 10px;
   margin: 30px 50px;
+  justify-content: center;
+  text-align: center;
   border: 3px ridge aqua;
   border-bottom: 3px ridge aqua;
+}
+
+#header-nav-open {
+  float: left;
 }
 
 #modal-button {
@@ -23,4 +29,21 @@ h1, h6 {
 
 #modal-button:hover {
   cursor: pointer;
+}
+
+.stars {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  filter: grayscale(1);
+}
+
+.found {
+  animation-name: found;
+  animation-duration: 3s;
+}
+
+@keyframes found {
+  0% {filter: grayscale(1);}
+  100% {filter: grayscale(0);}
 }

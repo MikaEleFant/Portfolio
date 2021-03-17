@@ -25,6 +25,7 @@ function validateInput() {
     closeModal();
     modalButton.style.display = "none";
     window.open("https://youtu.be/dQw4w9WgXcQ");
+    foundStar(0);
   }
   else {
     alert("Incorrect answer. Perhaps a hint is necessary?");

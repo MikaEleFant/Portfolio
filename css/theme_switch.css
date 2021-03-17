@@ -1,11 +1,22 @@
 .theme-switch-wrapper {
-  display: flex;
+  display: block;
   align-items: center;
   position: absolute;
+  width: 136px;
+  height: 41px;
   left: 85%;
   top: 5%;
+}
+
+.theme-switch-wrapper:hover {
+  cursor: pointer;
+}
+
+.theme-hider {
+  display: none;
+  opacity: 1;
   animation-name: reveal;
-  animation-duration: 5s; 
+  animation-duration: 5s;
 }
 
 @keyframes reveal {

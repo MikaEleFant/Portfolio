@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link href="css/reset.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323|Press+Start+2P" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
     <link href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -13,11 +13,12 @@
     <link href="css/dividers.css" rel="stylesheet">
     <link href="css/article.css" rel="stylesheet">
     <link href="css/skills.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/footer_nav.css" rel="stylesheet">
 
-    <script src="script/background.js"></script>
+    <script src="script/theme.js"></script>
     <script src="script/modal.js"></script>
     <script src="script/header_nav.js"></script>
+    <script src="script/stars.js"></script>
     <title>Chang Ho Lee - Software Engineer</title>
   </head>
   <body>
@@ -27,13 +28,15 @@
       <h6 class="hint">You were trying to cross the border, right?</h6>
       <h2>My name's Chang Ho Lee. This is my website.</h2>
 
-      <div class="theme-switch-wrapper">
-        <span class="material-icons-outlined theme-icon">light_mode</span>
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" onchange="switchTheme()">
-          <div class="slider round"></div>
-        </label>
-        <span class="material-icons-outlined theme-icon">dark_mode</span>
+      <div class="theme-switch-wrapper" onclick="revealThemeToggle()">
+        <div class="theme-hider">
+          <span class="material-icons-outlined theme-icon">light_mode</span>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" onchange="switchTheme()">
+            <div class="slider round"></div>
+          </label>
+          <span class="material-icons-outlined theme-icon">dark_mode</span>
+        </div>
       </div>
 
       <div class="separator01"></div>
@@ -48,6 +51,9 @@
           <a onclick="closeNav()" href="#achievements">What have I achieved?</a>
           <a onclick="closeNav()" href="#contact">How can I be contacted?</a>
         </nav>
+
+        <img class="stars" src="https://img.icons8.com/officel/30/000000/pixel-star.png"/>
+        <img class="stars" src="https://img.icons8.com/officel/30/000000/pixel-star.png"/>
 
         <button id="modal-button" onclick="openModal()">???</button>
 
@@ -64,7 +70,7 @@
               <p>Prove your worth.</p>
 
               <input type="text" id="answer" name="answer">
-              <button id="submit" onclick="validateInput()">Reveal the unseen!</button>
+              <button id="submit" maxlength="6" onclick="validateInput()">Reveal the unseen!</button>
             </div>
 
             <div class="modal-footer">
@@ -102,7 +108,7 @@
             <article class="pollidify">
               <a href="https://warm-crag-62563.herokuapp.com/" target="_blank">
                 <div class="hover-img">
-                  <img src="resources/screenshots/Pollidify.png" alt="Pollidify - A Free & Simple Polling Site!">
+                  <img class="project-img" src="resources/screenshots/Pollidify.png" alt="Pollidify - A Free & Simple Polling Site!">
                   <!-- <div class="hover-text">Go To Pollidify</div> -->
                 </div>
               </a>
@@ -121,7 +127,7 @@
           <li>
             <article class="whats-in-the-fridge">
               <a href="http://whatsinthefridgetonight.herokuapp.com/" target="_blank">
-                <img src="resources/screenshots/WITF.png" alt="What's in the Fridge? - A Convenient Recipe Finder Based On Ingredients In Your Fridge!">
+                <img class="project-img" src="resources/screenshots/WITF.png" alt="What's in the Fridge? - A Convenient Recipe Finder Based On Ingredients In Your Fridge!">
               </a>
               <details class="wtif-details">
                 <summary>What's In The Fridge? - A Convenient Recipe Finder Based On Ingredients In Your Fridge!</summary>
@@ -138,7 +144,7 @@
           <li>
             <article class="the-tower-of-rogues">
               <a href="https://mikaelefant.github.io/The-Tower-of-Rogues/" target="_blank">
-                <img src="resources/screenshots/TTOR.png" alt="The Tower of Rogues - A Roguelike Browser Game Based On D&D Elements!">
+                <img class="project-img" src="resources/screenshots/TTOR.png" alt="The Tower of Rogues - A Roguelike Browser Game Based On D&D Elements!">
               </a>
               <details class="ttor-details">
                 <summary>The Tower of Rogues - A Roguelike Browser Game Based On D&D Elements!</summary>
@@ -216,6 +222,7 @@
 
       <p class="copyright-text">Background images are from RPGMaker&trade; VX Ace, and belong to Degica&trade;, its partners, and its affiliates.</p>
       <p class="copyright-text">Pixel dividers created by <a href="https://codepen.io/c4rin3/pen/wLald" target="_blank">C4rin3</a>.</p>
+      <p class="copyright-text"><a href="https://icons8.com/icon/hRlGryuq38s4/pixel-star">Pixel Star icon by Icons8</a></p>
     </footer>
   </body>
 </html>
