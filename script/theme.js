@@ -18,7 +18,7 @@ function switchTheme() {
   let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close");
 
   if (themeCheck.checked) {
-    root.style.backgroundImage = "url('/starlitsky.png')";
+    root.style.backgroundImage = "url('../resources/backgrounds/StarlitSky.png')";
     containerElements.forEach(containerElement => containerElement.style.color = "white");
     dividers.forEach(divider => divider.className = "separator01");
     containers.forEach(container => container.style.backgroundColor = "black");
@@ -28,7 +28,7 @@ function switchTheme() {
     localStorage.setItem("theme", "dark");
   }
   else {
-    root.style.backgroundImage = "url('/bluesky.png')";
+    root.style.backgroundImage = "url('../resources/backgrounds/BlueSky.png')";
     containerElements.forEach(containerElement => containerElement.style.color = "black");
     dividers.forEach(divider => divider.className = "separator02");
     containers.forEach(container => container.style.backgroundColor = "white");
