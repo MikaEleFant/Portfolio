@@ -6,20 +6,39 @@ article {
   border-top: 3px ridge aqua;
 }
 
-img {
-  width: 960px;
-  height: 480px;
-  border: 3px ridge aqua;
+.hover-img {
+  position: relative;
   transition: 1s ease;
 }
 
-img:hover {
-  filter: brightness(50%);
+img {
+  width: 640px;
+  height: 360px;
+  border: 3px ridge aqua;
 }
+
+/* .hover-img:hover {
+  opacity: 0.5;
+}
+
+.hover-text {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.hover-text:hover {
+  opacity: 1;
+} */
 
 details {
   display: inline;
+  margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 30%;
   height: 100%;
 }
