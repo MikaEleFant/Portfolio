@@ -8,8 +8,9 @@
   top: 5%;
 }
 
-.theme-switch-wrapper:hover {
+.hidden:hover {
   cursor: pointer;
+  border: 1px solid aqua;
 }
 
 .theme-hider {
