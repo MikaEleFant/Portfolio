@@ -13,7 +13,7 @@ document.onreadystatechange = function checkTheme() {
 function switchTheme() {
   let root = document.documentElement;
   let themeCheck = document.getElementById("checkbox");
-  let containerElements = document.querySelectorAll("h1, h2, h3, h6, p, a, li, span.theme-icon, #header-nav-close");
+  let containerElements = document.querySelectorAll("h1, h2, h3, h6, p, a, li, span.theme-icon, #header-nav-close, span.star-tooltip");
   let dividers = document.querySelectorAll("div.separator01, div.separator02");
   let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close");
 

@@ -6,6 +6,10 @@ article {
   border-top: 3px ridge aqua;
 }
 
+.the-tower-of-rogues {
+  border-bottom: 3px ridge aqua;
+}
+
 .hover-img {
   position: relative;
   transition: 1s ease;
