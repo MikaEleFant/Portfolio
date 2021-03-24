@@ -12,13 +12,38 @@ article {
 
 .hover-img {
   position: relative;
-  transition: 1s ease;
+  background-color: white;
 }
 
 .project-img {
+  opacity: 1;
+  display: block;
   width: 640px;
   height: 360px;
   border: 3px ridge aqua;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.hover-img:hover .project-img {
+  opacity: 0.3;
+}
+
+.hover-img:hover .hover-box {
+  opacity: 1;
+}
+
+.hover-box {
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+.hover-text {
+  border: solid 1px aqua;
+  padding: 12px;
 }
 
 details {

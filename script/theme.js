@@ -15,7 +15,7 @@ function switchTheme() {
   let themeCheck = localStorage.getItem("theme");
   let containerElements = document.querySelectorAll("h1, h2, h3, h6, p, a, li, #header-nav-close, span.star-tooltip");
   let dividers = document.querySelectorAll("div.separator01, div.separator02");
-  let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close");
+  let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close, div.hover-img");
   let yinyang = document.querySelector("div.yin-yang");
   let yinyangBorder = document.querySelector("div.yin-yang-border");
 
