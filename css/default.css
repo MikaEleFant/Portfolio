@@ -44,6 +44,10 @@ p, a, li {
   font-size: larger;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 a {
   text-decoration: none;
 }
