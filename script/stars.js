@@ -13,6 +13,7 @@ function foundStar(i) {
 
   star.classList.add("found");
   star.style.filter = "grayscale(0)";
+  star.style.opacity = "1";
   tooltip.innerHTML = tooltipsAfter[i];
 }
 

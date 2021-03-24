@@ -2,12 +2,12 @@ let currentTheme = localStorage.getItem("theme") ?? "light";
 
 document.onreadystatechange = function checkTheme() {
   if (currentTheme == "light") {
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", "dark");
   }
   else {
-    localStorage.setItem("theme", "dark");
-    switchTheme();
+    localStorage.setItem("theme", "light");
   }
+  switchTheme();
 }
 
 function switchTheme() {
