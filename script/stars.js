@@ -3,7 +3,8 @@ let tooltips = document.getElementsByClassName("star-tooltip");
 
 let tooltipsAfter = [
   "You just got RICKROLLED!",
-  "...and dark to light!"
+  "...and dark to light!",
+  "You are a true gamer!"
 ]
 
 function foundStar(i) {

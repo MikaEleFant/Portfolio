@@ -51,15 +51,17 @@
         
         <img class="stars star0" src="https://img.icons8.com/officel/30/000000/pixel-star.png"/>
         <img class="stars star1" src="https://img.icons8.com/officel/30/000000/pixel-star.png"/>
+        <img class="stars star2" onclick="openModal1()" src="https://img.icons8.com/officel/30/000000/pixel-star.png"/>
         <span class="star-tooltip tooltip0">Reveal the unseen!</span>
         <span class="star-tooltip tooltip1">Light to dark...</span>
+        <span class="star-tooltip tooltip2">Are you a true gamer?</span>
 
-        <button id="modal-button" onclick="openModal()">???</button>
+        <button id="modal-button" onclick="openModal0()">???</button>
 
         <div class="modal">
           <div class="modal-content">
             <div class="modal-header">
-              <button id="modal-close" onclick="closeModal()">&times;</button>
+              <button class="modal-close" onclick="closeModal()">&times;</button>
               <h3>So, you've noticed this strange button.</h3>
             </div>
 
@@ -68,8 +70,8 @@
               <p>Whatever your reasons, you are here now. But to continue, you must show you have the requirements.</p>
               <p>Prove your worth.</p>
 
-              <input type="text" id="answer" name="answer">
-              <button id="submit" maxlength="6" onclick="validateInput()">Reveal the unseen!</button>
+              <input type="text" id="answer0" class="answer" name="answer0" maxlength="6">
+              <button id="submit0" onclick="validateInput0()">Reveal the unseen!</button>
             </div>
 
             <div class="modal-footer">
@@ -78,6 +80,31 @@
           </div>
         </div>
       </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>So, you've come here as well.</h3>
+          </div>
+
+          <div class="modal-main">
+            <p>Are you a true gamer? Do you have what it takes to go even further beyond?</p>
+            <p>There are three games near and dear to my heart. I grew up with these games.</p>
+            <p>Can you guess all three? Good luck.</p>
+            <p>Hint: Hover over the text boxes, no spaces.</p>
+
+            <input type="text" id="answer1-1" class="answer" name="answer1-1" maxlength="13">
+            <input type="text" id="answer1-2" class="answer" name="answer1-2" maxlength="10">
+            <input type="text" id="answer1-3" class="answer" name="answer1-3" maxlength="5">
+          </div>
+
+          <div class="modal-footer">
+            <button id="submit1" onclick="validateInput1()">I am a gamer!</button>
+          </div>
+        </div>
+      </div>
+    </div>
       
     </header>
 

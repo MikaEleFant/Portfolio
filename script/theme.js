@@ -6,8 +6,8 @@ document.onreadystatechange = function checkTheme() {
   }
   else {
     localStorage.setItem("theme", "dark");
+    switchTheme();
   }
-  switchTheme();
 }
 
 function switchTheme() {

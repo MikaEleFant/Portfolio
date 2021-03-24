@@ -29,7 +29,7 @@
   to {top:0; opacity:1}
 }
 
-#modal-close {
+.modal-close {
   color: white;
   float: right;
   font-size: 28px;
@@ -39,8 +39,8 @@
   text-align: center;
 }
 
-#modal-close:hover,
-#modal-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -65,7 +65,7 @@
   color: white;
 }
 
-#answer {
+.answer {
   text-transform: uppercase;
   text-align: center;
 }
@@ -82,4 +82,16 @@
   0% {opacity: 0;}
   50% {opacity: 1;}
   100% {opacity: 0;}
+}
+
+#answer1-1 {
+  cursor: url('../resources/cursors/kingdomhearts.png'), auto;
+}
+
+#answer1-2 {
+  cursor: url('../resources/cursors/maplestory.png'), auto;
+}
+
+#answer1-3 {
+  cursor: url('../resources/cursors/zelda.png'), auto;
 }
