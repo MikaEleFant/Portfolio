@@ -27,7 +27,7 @@ function switchTheme() {
     containers.forEach(container => container.style.backgroundColor = "black");
     root.style.setProperty("--highlight1", "rgba(255, 255, 255, 0.4)");
     root.style.setProperty("--highlight2", "rgba(255, 255, 255, 0.3)");
-    yinyang.style.transform = "rotate(180deg)";
+    yinyang.style.transform = "rotate(540deg)";
     yinyangBorder.style.borderColor = "white";
     for (let icon of icons) {
       icon.style.color = "white";
