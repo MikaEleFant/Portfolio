@@ -18,6 +18,7 @@ function switchTheme() {
   let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close, div.hover-img");
   let yinyang = document.querySelector("div.yin-yang");
   let yinyangBorder = document.querySelector("div.yin-yang-border");
+  let icons = document.getElementsByClassName("contact-icon");
 
   if (themeCheck == "light") {
     root.style.backgroundImage = "url('../resources/backgrounds/StarlitSky.png')";
@@ -28,6 +29,9 @@ function switchTheme() {
     root.style.setProperty("--highlight2", "rgba(255, 255, 255, 0.3)");
     yinyang.style.transform = "rotate(180deg)";
     yinyangBorder.style.borderColor = "white";
+    for (let icon of icons) {
+      icon.style.color = "white";
+    }
 
     localStorage.setItem("theme", "dark");
   }
@@ -40,6 +44,9 @@ function switchTheme() {
     root.style.setProperty("--highlight2", "rgba(0, 0, 0, 0.3)");
     yinyang.style.transform = "rotate(0deg)";
     yinyangBorder.style.borderColor = "black";
+    for (let icon of icons) {
+      icon.style.color = "black";
+    }
 
     localStorage.setItem("theme", "light");
   }    
