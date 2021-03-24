@@ -2,28 +2,32 @@ let currentTheme = localStorage.getItem("theme") ?? "light";
 
 document.onreadystatechange = function checkTheme() {
   if (currentTheme == "light") {
-    document.getElementById("checkbox").checked = false;
+    localStorage.setItem("theme", "light");
   }
   else {
-    document.getElementById("checkbox").checked = true;
+    localStorage.setItem("theme", "dark");
   }
   switchTheme();
 }
 
 function switchTheme() {
   let root = document.documentElement;
-  let themeCheck = document.getElementById("checkbox");
-  let containerElements = document.querySelectorAll("h1, h2, h3, h6, p, a, li, span.theme-icon, #header-nav-close, span.star-tooltip");
+  let themeCheck = localStorage.getItem("theme");
+  let containerElements = document.querySelectorAll("h1, h2, h3, h6, p, a, li, #header-nav-close, span.star-tooltip");
   let dividers = document.querySelectorAll("div.separator01, div.separator02");
   let containers = document.querySelectorAll("div.modal-main, nav.header-nav, #header-nav-close");
+  let yinyang = document.querySelector("div.yin-yang");
+  let yinyangBorder = document.querySelector("div.yin-yang-border");
 
-  if (themeCheck.checked) {
+  if (themeCheck == "light") {
     root.style.backgroundImage = "url('../resources/backgrounds/StarlitSky.png')";
     containerElements.forEach(containerElement => containerElement.style.color = "white");
     dividers.forEach(divider => divider.className = "separator01");
     containers.forEach(container => container.style.backgroundColor = "black");
     root.style.setProperty("--highlight1", "rgba(255, 255, 255, 0.4)");
     root.style.setProperty("--highlight2", "rgba(255, 255, 255, 0.3)");
+    yinyang.style.transform = "rotate(180deg)";
+    yinyangBorder.style.borderColor = "white";
 
     localStorage.setItem("theme", "dark");
   }
@@ -34,6 +38,8 @@ function switchTheme() {
     containers.forEach(container => container.style.backgroundColor = "white");
     root.style.setProperty("--highlight1", "rgba(0, 0, 0, 0.4)");
     root.style.setProperty("--highlight2", "rgba(0, 0, 0, 0.3)");
+    yinyang.style.transform = "rotate(0deg)";
+    yinyangBorder.style.borderColor = "black";
 
     localStorage.setItem("theme", "light");
   }    

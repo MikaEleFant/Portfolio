@@ -21,24 +21,6 @@ article {
   border: 3px ridge aqua;
 }
 
-/* .hover-img:hover {
-  opacity: 0.5;
-}
-
-.hover-text {
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-}
-
-.hover-text:hover {
-  opacity: 1;
-} */
-
 details {
   display: inline;
   margin: 0 auto;
@@ -50,4 +32,31 @@ details {
 .samulnori-links {
   text-align: center;
   justify-content: center;
+}
+
+details > summary {
+  list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::before {
+  content: '+ ';
+  font-weight: bolder;
+}
+
+details[open] > summary::before {
+  content: '- ';
+  font-weight: bolder;
+}
+
+details[open] summary ~ *{
+  animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
