@@ -6,9 +6,9 @@
 html {
   scroll-behavior: smooth;
   background-image: url('../resources/backgrounds/StarlitSky.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 1920px, 1080px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
