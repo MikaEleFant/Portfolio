@@ -15,8 +15,6 @@
 }
 
 .theme-hider {
-  display: none;
-  opacity: 1;
   animation-name: reveal;
   animation-duration: 5s;
 }
