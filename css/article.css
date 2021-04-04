@@ -6,7 +6,7 @@ article {
   border-top: 3px ridge aqua;
 }
 
-.the-tower-of-rogues {
+.last-project {
   border-bottom: 3px ridge aqua;
 }
 
@@ -67,6 +67,11 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
+details > summary:hover {
+  cursor: pointer;
+  border: solid 1px white;
+}
+
 details > summary::before {
   content: '+ ';
   font-weight: bolder;
@@ -88,4 +93,8 @@ details[open] summary ~ *{
 
 .samulnori-more {
   margin-top: 30px;
+}
+
+.tech-stack {
+  font-weight: bold;
 }
