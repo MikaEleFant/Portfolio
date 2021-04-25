@@ -9,7 +9,7 @@ document.onreadystatechange = function checkTheme() {
   }
   switchTheme();
 }
-
+ 
 function switchTheme() {
   let root = document.documentElement;
   let themeCheck = localStorage.getItem("theme");
