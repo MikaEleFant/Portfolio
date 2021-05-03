@@ -32,7 +32,7 @@ function switchTheme() {
     for (let icon of icons) {
       icon.style.color = "white";
     }
-
+ 
     localStorage.setItem("theme", "dark");
   }
   else {
